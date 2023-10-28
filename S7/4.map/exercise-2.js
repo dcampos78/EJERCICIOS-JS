@@ -1,0 +1,11 @@
+const users = [{id: 1, name: 'Abel'}, {id:2, name: 'Julia'},{id:3, name: 'Pedro'}, {id:4, name: 'Amanda'}];
+
+let usersName = users.map(function(user) {
+    let aName = user.name;
+    if (aName.includes('A', 0)){
+        aName = 'Anacleto';
+    }
+    return aName
+});
+
+console.log(usersName);
