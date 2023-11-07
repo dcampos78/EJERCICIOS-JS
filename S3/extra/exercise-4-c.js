@@ -14,13 +14,16 @@ for (let country of countries) {
     btn$$.id = 'btn';
     btn$$.textContent = 'Borra esta foto';
     btn$$.addEventListener("click", removeElement);
+    div$$.appendChild(btn$$);
+
     let h4$$ = document.createElement("h4");
     h4$$.textContent = country.title;
+    div$$.appendChild(h4$$);
+
     let img$$ = document.createElement("img");
     img$$.setAttribute("src", country.imgUrl);
-    div$$.appendChild(btn$$);
-    div$$.appendChild(h4$$);
     div$$.appendChild(img$$);
+
     document.body.appendChild(div$$);
 }
 

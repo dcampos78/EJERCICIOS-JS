@@ -5,7 +5,8 @@ let legendsStreamers = streamers.filter(function (stream){
         if (stream.age>35){
             stream.gameMorePlayed = stream.gameMorePlayed.toUpperCase();
         }
-        return stream;
+        return true;
     }
+    return false;
 })
 console.log(legendsStreamers);

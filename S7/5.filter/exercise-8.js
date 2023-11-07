@@ -6,6 +6,6 @@ button$$.addEventListener('click', inputType);
 
 function inputType (){
     let inputStreamers = streamers.filter(streamer => streamer.name.includes(inputbtn.value));
-    return console.log(inputStreamers);
-}
+    return console.log(inputStreamers)
+}...inputType
 

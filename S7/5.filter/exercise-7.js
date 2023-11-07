@@ -4,9 +4,10 @@ let inputbtn = document.querySelector('input[data-function="toFilterStreamers"]'
 inputbtn.addEventListener('input', inputType);
 
 function inputType (){
-    let inputStreamers = streamers.filter(streamer => streamer.name.includes(this.value));
-    return console.log(inputStreamers);
-}
+    let inputValue = this.value;
+    let inputStreamers = streamers.filter(function(streamer) {
+    return streamer.name.includes(inputValue);
 
+});
 
-
+console.log(inputStreamers);

@@ -4,5 +4,4 @@ const animalFunction = () => {
 
 
 let {name, race} = animalFunction();
-console.log(name);
-console.log(race);
+console.log(name, race);

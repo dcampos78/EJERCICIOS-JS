@@ -12,8 +12,9 @@ const videogames = [
 let avgRpg = (videogames) => {
     let videoGen = videogames.filter(function (videogame){
         if (videogame.genders === 'RPG'){
-            return videogame;
+            return true;
         }
+        return false;
     })
         return videoGen.reduce((acc, videogame) => acc + videogame.score, 0) / videoGen.length;
 }
